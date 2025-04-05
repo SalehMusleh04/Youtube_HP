@@ -18,32 +18,38 @@ header {
    display: flex;
    justify-content: space-between;
   align-items: center;
-  height: 56px;
+  height: 10vh;
   padding: 0 16px 0 16px;
+  width: 100vw;
 }
 
 .left-section{
     display: flex;
     align-items: center;
     cursor: pointer;
-
+    width: 16vw; 
 }
 
 .left-section img {
-    width : 93px;
+    width : 14vw;
     padding-left: 16px;
+}
+.left-section > i {
+    font-size : 2vw;
 }
 
 .mid-section {
     display: flex;
     align-items: center;
     margin-left: -9%;
+    width: 50% ;
 }
+
 
 .mid-section form {
     display: flex;
     height: 40px;
-    width: 628px;
+    width: 628px ;
 }
 
 .mid-section input {
@@ -59,7 +65,7 @@ header {
     border-radius : 0 20px 20px 0 ;
     border: 1px solid #d3d3d3;
     border-left: none;
-    width: 64px ;
+    width: 10% ;
     background-color: #f8f8f8;
     display: flex;
     justify-content: center;
@@ -74,7 +80,7 @@ header {
     background-color: #f9f9f9;
     width: 40px;
     height: 40px;
-    border-radius: 70px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,14 +88,21 @@ header {
     margin-top: 3px;
 }
 
+
+
+
+
 .mid-section > i:hover {
     background-color: #cccfce;
     cursor: pointer;
 }
 
+.right-section {
+    display: flex;
+    justify-content: center;
+}
 .right-section a {
     padding-right: 18px;
-    
     text-decoration: none;
     color: black;
     
@@ -100,7 +113,7 @@ header {
 }
 
 .content-area{
-    height: calc(100vh - 56px); /* من ارتفاع النافذة كلها header هون شلت ارتفاع ال  */
+    height: calc(100vh - 10vh); /* من ارتفاع النافذة كلها header هون شلت ارتفاع ال  */
     display: flex;
     background-color: #f9f9f9;
 }
@@ -271,5 +284,21 @@ aside::-webkit-scrollbar-thumb /*  هذا يمثل الشريط الفعلي ا�
 aside::-webkit-scrollbar-thumb:hover {
     background-color: #787272;
 }
+
+
+@media screen and (max-width : 1024px) {
+    #videoCall  {
+        margin-left : 10% ;
+        
+    }
+
+    .right-section a {
+        padding: 0 1vw;
+    }
+    .mid-section {
+        margin-left: 1vw;
+    }
+}
+
 
 
